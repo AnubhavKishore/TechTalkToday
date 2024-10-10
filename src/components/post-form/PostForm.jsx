@@ -76,7 +76,7 @@ export default function PostForm({ post }) {
                 <Input
                     label="Title :"
                     placeholder="Title"
-                    className="mb-4"
+                    className="mb-4  "
                     {...register("title", { required: true })}
                 />
                 <Input
@@ -94,7 +94,7 @@ export default function PostForm({ post }) {
                 <Input
                     label="Featured Image :"
                     type="file"
-                    className="mb-4"
+                    className="mb-4 "
                     accept="image/png, image/jpg, image/jpeg, image/gif, image/avif"
                     {...register("image", { required: !post })}
                 />
@@ -113,7 +113,7 @@ export default function PostForm({ post }) {
                     className="mb-4"
                     {...register("status", { required: true })}
                 />
-                <Button type="submit" bgColor={post ? "bg-green-500" : undefined} className="w-full">
+                <Button type="submit" bgColor={post ? "bg-orange-400 hover: bg-orange-500" : "bg-orange-400 hover:bg-orange-500"} className="w-full">
                     {post ? "Update" : "Submit"}
                 </Button>
             </div>
